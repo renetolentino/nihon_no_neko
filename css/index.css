@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;700&display=swap");
+
 /*
 
     VARIÁVEIS QUE SERÃO USADAS E APROVEITADAS
@@ -17,7 +19,6 @@
   --font-blue: #2c3e50;
   --font-black: #333333;
   --font-green: #2e7d32;
-  --font-test: #aaa;
 }
 
 /*
@@ -57,7 +58,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--font-blue);
