@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nihon no Neko&trade;</title>
+    <link
+      rel="shortcut icon"
+      href="/img/logo-removebg.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Início da barra de navegação -->
+
+    <nav id="navbar" class="navbar">
+      <!-- Formatação da logo -->
+      <div class="brand-title">
+        <img class="brand-img" src="./img/logo-removebg.png" alt="" />
+      </div>
+
+      <!-- Botão do menu hamburguer -->
+      <div id="toggle-button" class="toggle-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- Links da navegação -->
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#atualizacoes">Atualizações</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <main id="main">
+      <section id="cadastro" class="section main-bg">
+        <div class="header">
+          <header>
+            <h2>Registre-se agora!</h2>
+          </header>
+        </div>
+        <fieldset>
+          <h1>
+            <img class="img-logo" src="/img/logo-removebg.png" alt="" />
+          </h1>
+          <div class="form-group">
+            <label for="nome"><h3>Nome completo</h3></label>
+            <input
+              placeholder="Digite seu nome"
+              type="text"
+              name="nome"
+              id="nome"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email"><h3>E-mail</h3></label>
+            <input
+              placeholder="Digite seu email"
+              type="email"
+              name="email"
+              id="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="nascimento"><h3>Data de nascimento</h3></label>
+            <input type="date" name="nascimento" id="nascimento" />
+          </div>
+          <div class="form-group">
+            <label for="pass"><h3>Senha</h3></label>
+            <input
+              minlength="8"
+              maxlength="12"
+              placeholder="Digite sua senha"
+              type="password"
+              name="pass"
+              id="pass"
+            />
+          </div>
+          <div class="form-group">
+            <label for="passConfirm"><h3>Confirme sua senha</h3></label>
+            <input
+              min="8"
+              maxlength="12"
+              placeholder="Confirme sua senha"
+              type="password"
+              name="passConfirm"
+              id="passConfirm"
+            />
+          </div>
+          <div class="form-contrato">
+            <h4>Eu li e aceito os <a href="#">termos de contrato</a></h4>
+            <label for="contrato">
+              <input required type="checkbox" name="contrato" id="contrato" />
+            </label>
+          </div>
+          <div class="form-contrato">
+            <h4>
+              Eu li e aceito as políticas de<a href="#"> uso e privacidade</a>
+            </h4>
+            <label for="politicas">
+              <input required type="checkbox" name="politicas" id="politicas" />
+            </label>
+          </div>
+          <div class="form-group">
+            <button onclick="registrar()">Registrar</button>
+          </div>
+        </fieldset>
+      </section>
+    </main>
+
+    <!-- Rodapé da página -->
+
+    <footer>
+      <h4>NIHON NO NEKO&trade; - Todos os direitos reservados</h4>
+    </footer>
+    <div id="go-to-home" class="go-to-home">
+      <img src="/img/botao-cima.svg" alt="" onclick="voltarTopo()" />
+    </div>
+    <script src="./js/navbar.js"></script>
+
+    <script src="js/voltarTopo.js"></script>
+    <script src="/js/validarCadastro.js"></script>
+  </body>
+</html>
