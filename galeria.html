@@ -52,7 +52,30 @@
     </nav>
 
     <!-- Conteúdo da página -->
-    <main id="main"></main>
+    <main id="main">
+      <section id="galeria" class="slide section main-bg">
+        <div class="row">
+          <header class="header">
+            <h2>Galeria</h2>
+          </header>
+        </div>
+        <div class="row">
+          <div class="column">
+            <a onclick="esquerda()">
+              <img class="seta esquerda" src="./img/left-arrow.svg" alt="" />
+            </a>
+          </div>
+          <div id="imagem" class="column">
+            <img id="slide-img" src="./img/img-1.jpg" alt="" />
+          </div>
+          <div class="column">
+            <a onclick="direita()">
+              <img class="seta" src="./img/right-arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- Rodapé da página -->
 
@@ -63,7 +86,6 @@
       <img src="/img/botao-cima.svg" alt="" onclick="voltarTopo()" />
     </div>
     <script src="./js/navbar.js"></script>
-    <script src="./js/atualizacoes.js"></script>
-    <script src="js/voltarTopo.js"></script>
+    <script src="./js/slide.js"></script>
   </body>
 </html>
