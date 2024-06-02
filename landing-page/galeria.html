@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nihon no Neko&trade;</title>
+    <link
+      rel="shortcut icon"
+      href="/img/logo-removebg.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <!-- Início da barra de navegação -->
+
+    <nav id="navbar" class="navbar">
+      <!-- Formatação da logo -->
+      <div class="brand-title">
+        <img class="brand-img" src="./img/logo-removebg.png" alt="" />
+      </div>
+
+      <!-- Botão do menu hamburguer -->
+      <div id="toggle-button" class="toggle-button">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <!-- Links da navegação -->
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#atualizacoes">Atualizações</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li><a href="cadastro.html">Cadastro</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Conteúdo da página -->
+    <main id="main">
+      <section id="galeria" class="slide section main-bg">
+        <div class="row">
+          <header class="header">
+            <h2>Galeria</h2>
+          </header>
+        </div>
+        <div id="imagem" class="row">
+          <img id="slide-img" src="./img/img-1.jpg" alt="" />
+        </div>
+        <div class="row">
+          <div class="column">
+            <a onclick="esquerda()">
+              <img class="seta esquerda" src="./img/left-arrow.svg" alt="" />
+            </a>
+          </div>
+          <div class="column">
+            <a onclick="direita()">
+              <img class="seta" src="./img/right-arrow.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Rodapé da página -->
+
+    <footer>
+      <h4>NIHON NO NEKO&trade; - Todos os direitos reservados</h4>
+    </footer>
+    <div id="go-to-home" class="go-to-home">
+      <img src="/img/botao-cima.svg" alt="" onclick="voltarTopo()" />
+    </div>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/slide.js"></script>
+  </body>
+</html>
