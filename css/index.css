@@ -17,6 +17,7 @@
   --font-blue: #2c3e50;
   --font-black: #333333;
   --font-green: #2e7d32;
+  --font-test: #aaa;
 }
 
 /*
@@ -42,7 +43,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: 'Reddit Sans', sans-serif;
+  font-family: "Reddit Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -56,7 +57,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Poetsen One', sans-serif;
+  font-family: "Poetsen One", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--font-blue);
@@ -134,7 +135,7 @@ h4 {
 }
 
 .navbar-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 1.5rem;
   left: 20%;
@@ -177,7 +178,7 @@ h4 {
     display: flex;
   }
   .navbar-links a::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 1.5rem;
     left: 39%;
@@ -206,7 +207,7 @@ h4 {
 }
 
 .main-bg {
-  background-image: url('../img/main-bg.svg');
+  background-image: url("../img/main-bg.svg");
   background-position: center center;
   background-size: cover;
 }
