@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;700&display=swap");
-
 /*
 
     VARIÁVEIS QUE SERÃO USADAS E APROVEITADAS
@@ -44,7 +42,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: "Reddit Sans", sans-serif;
+  font-family: 'Reddit Sans', sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -58,20 +56,20 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poetsen One', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: var(--font-blue);
 }
 
 h2 {
-  font-size: 5rem;
-}
-h3 {
   font-size: 4rem;
 }
+h3 {
+  font-size: 3rem;
+}
 h4 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
 
 /* CONTEÚDO DA BARRA DE NAVEGAÇÃO */
@@ -136,7 +134,7 @@ h4 {
 }
 
 .navbar-links a::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 1.5rem;
   left: 20%;
@@ -179,7 +177,7 @@ h4 {
     display: flex;
   }
   .navbar-links a::after {
-    content: "";
+    content: '';
     position: absolute;
     bottom: 1.5rem;
     left: 39%;
@@ -208,7 +206,7 @@ h4 {
 }
 
 .main-bg {
-  background-image: url("../img/main-bg.svg");
+  background-image: url('../img/main-bg.svg');
   background-position: center center;
   background-size: cover;
 }
@@ -377,6 +375,7 @@ footer {
 
 .form-group {
   width: 100%;
+  min-width: 410px;
 }
 
 .form-group input {
@@ -409,7 +408,7 @@ footer {
 }
 
 .form-contrato h4 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: inline;
 }
 
@@ -421,12 +420,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 1rem;
 }
 
 .form-contrato label {
   position: relative;
   width: 1.3rem;
   height: 1.3rem;
+  margin-right: 2rem;
 }
 
 .form-contrato input {
@@ -439,4 +440,53 @@ footer {
   text-align: center;
   color: var(--black-color);
   font-size: 1.3rem;
+}
+
+.img-logo {
+  width: 6rem;
+  height: 6rem;
+}
+
+#cadastro .column.center {
+  justify-content: center;
+  align-items: center;
+}
+
+#cadastro .row.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  height: 6rem;
+  width: 6rem;
+  background-color: var(--lavanda-color);
+  border-radius: 3rem;
+}
+
+#cadastro {
+  margin: 0 auto;
+}
+
+#imagem {
+  flex: 3;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#galeria .column {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.seta {
+  width: 30%;
+  cursor: pointer;
+}
+
+.esquerda {
+  position: absolute;
+  right: 0;
 }
