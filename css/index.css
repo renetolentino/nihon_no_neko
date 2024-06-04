@@ -247,6 +247,8 @@ h4 {
 .cover-img {
   max-width: 900px;
   min-width: 250px;
+  min-height: 250px;
+  max-height: 900px;
 }
 
 @media screen and (max-width: 250px) {
@@ -485,6 +487,7 @@ footer {
   width: 100%;
   min-width: 300px;
   max-width: 900px;
+  margin: 0 auto;
 }
 
 #galeria .column {
