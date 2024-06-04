@@ -380,15 +380,17 @@ footer {
   align-items: center;
   width: 100%;
   text-align: center;
+  min-width: 300px;
 }
 
 .form-group {
   width: 100%;
-  min-width: 410px;
+  min-width: 300px;
 }
 
 .form-group input {
-  width: 50%;
+  width: 100%;
+  max-width: 500px;
   border-radius: 0.3rem;
   box-shadow: 0.3rem 0.3rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
   font-size: 1.3rem;
