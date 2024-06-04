@@ -481,7 +481,7 @@ footer {
   margin-top: 1rem;
   margin-bottom: 1rem;
   width: 100%;
-  min-width: 400px;
+  min-width: 300px;
 }
 
 #galeria .column {
@@ -499,6 +499,8 @@ footer {
 
 #slide-img {
   width: 100%;
+  max-width: 900px;
+  min-width: 300px;
 }
 
 .seta {
